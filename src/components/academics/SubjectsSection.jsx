@@ -44,7 +44,8 @@ const subjectCategories = [
       "Geography",
       "Social Studies",
       "Life Skills",
-      "Religious Education",
+      "Bibke knowledge",
+      "Business studies",
     ],
     note: "Building responsible and culturally aware citizens",
   },
@@ -55,7 +56,7 @@ const subjectCategories = [
     subjects: [
       "English",
       "Chichewa",
-      "French (Optional)",
+      
     ],
     note: "Focus on communication, literature & comprehension",
   },

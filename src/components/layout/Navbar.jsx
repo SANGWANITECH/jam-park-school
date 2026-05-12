@@ -72,7 +72,7 @@ export default function Navbar() {
               <a href="tel:+265991627231" style={{ display: "flex", alignItems: "center", gap: "0.4rem", fontSize: "0.75rem", color: "#ffffff", textDecoration: "none" }}>
                 <Phone size={11} /> +265 99 162 7231
               </a>
-              <a href="mailto:info@jampark.edu.mw" style={{ display: "flex", alignItems: "center", gap: "0.4rem", fontSize: "0.75rem", color: "#ffffff", textDecoration: "none" }}>
+              <a href="mailto:sylesscef@yahoo.com" style={{ display: "flex", alignItems: "center", gap: "0.4rem", fontSize: "0.75rem", color: "#ffffff", textDecoration: "none" }}>
                 <Mail size={11} />sylesscef@yahoo.com
               </a>
             </div>
@@ -224,7 +224,7 @@ export default function Navbar() {
               <a href="tel:+265991627231" style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontSize: "0.8rem", color: "#ffffff", textDecoration: "none" }}>
                 <Phone size={13} /> +265 99 162 7231
               </a>
-              <a href="mailto:info@jampark.edu.mw" style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontSize: "0.8rem", color: "#ffffff", textDecoration: "none" }}>
+              <a href="mailto:sylesscef@yahoo.com" style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontSize: "0.8rem", color: "#ffffff", textDecoration: "none" }}>
                 <Mail size={13} />sylesscef@yahoo.com
               </a>
             </div>

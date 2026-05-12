@@ -1,29 +1,29 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { GraduationCap, Shield, Globe } from "lucide-react";
+import { GraduationCap, Shield, Star } from "lucide-react";
 
 const pillars = [
   {
-    icon: GraduationCap,
-    title: "Academic Excellence",
+    icon: Shield,
+    title: "Courage",
     description:
-      "We maintain the highest academic standards through a rigorous curriculum, experienced teachers, and a culture of continuous improvement. Our students consistently perform well in JCE and MSCE national examinations.",
+      "We raise students who are bold, resilient and unafraid to face challenges. At Jam Park, courage means standing up for what is right, taking on difficult tasks and persevering in the face of adversity.",
     color: "#0EA5E9",
     number: "01",
   },
   {
-    icon: Shield,
-    title: "Discipline & Character",
+    icon: Star,
+    title: "Confidence",
     description:
-      "We believe education goes beyond books. We instill strong moral values, respect, integrity, and personal responsibility in every student — shaping not just scholars but exceptional human beings.",
+      "We build confident young men and women who believe in their abilities and are prepared to take on the world. Through academic achievement, sports and leadership, every student discovers their unique strengths.",
     color: "#16A34A",
     number: "02",
   },
   {
-    icon: Globe,
-    title: "Community & Service",
+    icon: GraduationCap,
+    title: "Discipline",
     description:
-      "Our students are raised to be responsible citizens. Through community service, leadership programmes, and civic engagement, we prepare young people to give back and lead with purpose.",
+      "Discipline is the foundation of all greatness. We instill strong self-discipline, punctuality, respect and personal responsibility in every student — building habits that will serve them for life.",
     color: "#0EA5E9",
     number: "03",
   },

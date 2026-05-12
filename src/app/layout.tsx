@@ -43,14 +43,14 @@ export const metadata: Metadata = {
   authors: [{ name: "Jam Park Private Secondary School" }],
   creator: "Jam Park Private Secondary School",
   publisher: "Jam Park Private Secondary School",
-  metadataBase: new URL("https://jampark.edu.mw"),
+  metadataBase: new URL("https://www.jamparksecondaryschool.site"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_MW",
-    url: "https://jampark.edu.mw",
+    url: "https://www.jamparksecondaryschool.site",
     siteName: "Jam Park Private Secondary School",
     title: "Jam Park Private Secondary School | Lilongwe, Malawi",
     description: "A premier private secondary school in Lilongwe, Malawi — nurturing academic excellence, discipline and character since 2005.",

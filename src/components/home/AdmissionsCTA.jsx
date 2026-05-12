@@ -190,7 +190,7 @@ export default function AdmissionsCTA() {
               </a>
 
               <a
-                href="mailto:info@jampark.edu.mw"
+                href="mailto:sylesscef@yahoo.com"
                 style={{
                   display: "flex",
                   alignItems: "center",

@@ -14,38 +14,33 @@ export default function Hero() {
   const [isMobile, setIsMobile] = useState(true);
   const timerRef = useRef(null);
 
-  // Improved Screen Size Detection
   useEffect(() => {
     let timeoutId;
-
     const checkSize = () => {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(() => {
         setIsMobile(window.innerWidth < 768);
       }, 100);
     };
-
-    checkSize(); // Initial check
+    checkSize();
     window.addEventListener("resize", checkSize);
-
     return () => {
       clearTimeout(timeoutId);
       window.removeEventListener("resize", checkSize);
     };
   }, []);
 
-  // Auto Slide Timer
   useEffect(() => {
     timerRef.current = setInterval(() => {
       setCurrent((c) => (c + 1) % slides.length);
     }, 4000);
-
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
   }, []);
 
   const heroHeight = isMobile ? "70vh" : "88vh";
+  const navOffset = isMobile ? "72px" : "105px";
 
   return (
     <section
@@ -57,9 +52,11 @@ export default function Hero() {
         display: "flex",
         alignItems: "center",
         overflow: "hidden",
+        marginTop: navOffset,
       }}
     >
-      {/* Slideshow */}
+
+      {/* SLIDESHOW */}
       {slides.map((src, i) => (
         <div
           key={i}
@@ -76,62 +73,55 @@ export default function Hero() {
         />
       ))}
 
-      {/* Dark Overlay */}
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          background: "rgba(7, 24, 41, 0.78)",
-          zIndex: 1,
-        }}
-      />
+      {/* DARK OVERLAY */}
+      <div style={{
+        position: "absolute",
+        inset: 0,
+        background: "rgba(7, 24, 41, 0.78)",
+        zIndex: 1,
+      }} />
 
-      {/* Bottom Accent */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: 0,
-          left: 0,
-          right: 0,
-          height: "4px",
-          background: "linear-gradient(to right, #0EA5E9, #16A34A)",
-          zIndex: 3,
-        }}
-      />
+      {/* BOTTOM ACCENT */}
+      <div style={{
+        position: "absolute",
+        bottom: 0,
+        left: 0,
+        right: 0,
+        height: "4px",
+        background: "linear-gradient(to right, #0EA5E9, #16A34A)",
+        zIndex: 3,
+      }} />
 
-      {/* Content */}
+      {/* CONTENT */}
       <div className="container" style={{ position: "relative", zIndex: 2 }}>
         <div style={{ maxWidth: isMobile ? "100%" : "620px" }}>
-          <h1
-            style={{
-              fontFamily: "var(--font-display)",
-              color: "#ffffff",
-              fontWeight: 900,
-              fontSize: isMobile ? "2.4rem" : "clamp(3.2rem, 6vw, 5rem)",
-              lineHeight: 1.05,
-              margin: "0 0 0.85rem 0",
-              letterSpacing: "-0.02em",
-              marginTop: 20,
-            }}
-          >
+
+          <h1 style={{
+            fontFamily: "var(--font-display)",
+            color: "#ffffff",
+            fontWeight: 900,
+            fontSize: isMobile ? "2.4rem" : "clamp(3.2rem, 6vw, 5rem)",
+            lineHeight: 1.05,
+            margin: "0 0 0.85rem 0",
+            letterSpacing: "-0.02em",
+          }}>
             Jam Park<br />
-            <span style={{ color: "#0EA5E9" }}>Private</span> Secondary
+            <span style={{ color: "#0EA5E9" }}>Private</span> Secondary School
           </h1>
 
-          <p
-            style={{
-              fontFamily: "var(--font-display)",
-              color: "rgba(255,255,255,0.85)",
-              fontSize: isMobile ? "1rem" : "clamp(1.1rem, 2.5vw, 1.5rem)",
-              fontWeight: 400,
-              fontStyle: "italic",
-              lineHeight: 1.5,
-              margin: isMobile ? "0 0 1.5rem 0" : "0 0 2rem 0",
-            }}
-          >
-            Shaping Tomorrow's Leaders Today
+          <p style={{
+            fontFamily: "var(--font-display)",
+            color: "rgba(255,255,255,0.85)",
+            fontSize: isMobile ? "1rem" : "clamp(1.1rem, 2.5vw, 1.5rem)",
+            fontWeight: 400,
+            fontStyle: "italic",
+            lineHeight: 1.5,
+            margin: isMobile ? "0 0 1.5rem 0" : "0 0 2rem 0",
+          }}>
+            The future depends on it
           </p>
 
+          {/* BUTTONS */}
           <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
             <Link
               href="/admissions"
@@ -150,7 +140,6 @@ export default function Hero() {
                 letterSpacing: "0.1em",
                 textTransform: "uppercase",
                 textDecoration: "none",
-                borderRadius: "6px",
                 transition: "background 0.25s ease",
               }}
               onMouseEnter={(e) => (e.currentTarget.style.background = "#0284C7")}
@@ -177,7 +166,6 @@ export default function Hero() {
                 textTransform: "uppercase",
                 textDecoration: "none",
                 border: "2px solid rgba(255,255,255,0.6)",
-                borderRadius: "6px",
                 transition: "all 0.25s ease",
               }}
               onMouseEnter={(e) => {
@@ -192,20 +180,19 @@ export default function Hero() {
               Learn More
             </Link>
           </div>
+
         </div>
       </div>
 
-      {/* Slide Dots */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: "2rem",
-          right: "2rem",
-          zIndex: 3,
-          display: "flex",
-          gap: "0.6rem",
-        }}
-      >
+      {/* SLIDE DOTS */}
+      <div style={{
+        position: "absolute",
+        bottom: "2rem",
+        right: "2rem",
+        zIndex: 3,
+        display: "flex",
+        gap: "0.6rem",
+      }}>
         {slides.map((_, i) => (
           <button
             key={i}
@@ -222,6 +209,7 @@ export default function Hero() {
           />
         ))}
       </div>
+
     </section>
   );
 }

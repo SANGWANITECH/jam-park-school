@@ -130,7 +130,7 @@ export default function Footer() {
                   <Phone size={15} style={{ color: "#0EA5E9", flexShrink: 0 }} />
                   +265 99 162 7231
                 </a>
-                <a href="mailto:info@jampark.edu.mw"
+                <a href="mailto:sylesscef@yahoo.com"
                   style={{ display: "flex", alignItems: "center", gap: "0.75rem", fontFamily: "var(--font-ui)", color: "rgba(255,255,255,0.6)", fontSize: "0.85rem", textDecoration: "none", transition: "color 0.2s ease" }}
                   onMouseEnter={e => e.currentTarget.style.color = "#0EA5E9"}
                   onMouseLeave={e => e.currentTarget.style.color = "rgba(255,255,255,0.6)"}
@@ -169,6 +169,7 @@ export default function Footer() {
             © {currentYear} Jam Park Pvt Secondary School. All rights reserved.
           </p>
        
+       <p>developed by <a href="https://ram-techs.online/">RamTech</a></p>
         </div>
       </div>
 

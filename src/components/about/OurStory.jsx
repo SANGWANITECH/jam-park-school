@@ -3,34 +3,24 @@ import { useEffect, useRef, useState } from "react";
 
 const milestones = [
   {
-    year: "2005",
+    year: "2022",
     title: "Foundation",
     description: "Jam Park Private Secondary School was founded with a vision to provide quality private secondary education to students in Lilongwe's Area 25 and surrounding communities.",
   },
   {
-    year: "2008",
-    title: "First MSCE Class",
-    description: "Our inaugural Form 4 class sat their Malawi School Certificate of Education examinations, achieving an impressive pass rate that set the standard for years to come.",
+    year: "2023",
+    title: "First JCE Class",
+    description: "Our inaugural Form 2 class sat their Junior Certificate of Education examinations, achieving an impressive pass rate that set the standard for years to come.",
   },
   {
-    year: "2012",
+    year: "2024",
     title: "Expansion & Growth",
-    description: "Following strong demand from parents and students, the school expanded its facilities and increased student intake — growing to over 200 enrolled students.",
-  },
-  {
-    year: "2016",
-    title: "Academic Recognition",
-    description: "Jam Park was formally recognised for consistently high MSCE and JCE performance, cementing its reputation as one of Lilongwe's leading private secondary institutions.",
-  },
-  {
-    year: "2020",
-    title: "Modern Facilities",
-    description: "Major infrastructure improvements were made including upgraded science laboratories, a computer lab and an expanded library — enhancing the learning experience for all students.",
+    description: "Following strong demand from parents and students, the school expanded its facilities and increased student intake — growing steadily in both enrolment and academic performance.",
   },
   {
     year: "2025",
     title: "Today & Beyond",
-    description: "With over 400 students enrolled and 20+ years of excellence, Jam Park continues to grow — building on a strong foundation to shape the next generation of Malawi's leaders.",
+    description: "With over 300 students enrolled and a growing reputation for excellence, Jam Park continues to grow — building on a strong foundation to shape the next generation of Malawi's leaders.",
   },
 ];
 
@@ -237,7 +227,7 @@ export default function OurStory() {
             margin: "0 auto 1rem auto",
             maxWidth: "560px",
           }}>
-            Our Story Since 2005
+            Our Story Since 2022
           </h2>
           <p style={{
             fontFamily: "var(--font-body)",

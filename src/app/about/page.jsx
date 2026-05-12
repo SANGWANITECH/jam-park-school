@@ -5,6 +5,9 @@ import CoreValues from "@/components/about/CoreValues";
 import Leadership from "@/components/about/Leadership";
 import AdmissionsCTA from "@/components/home/AdmissionsCTA";
 
+
+
+
 export default function AboutPage() {
   return (
     <>
