@@ -177,7 +177,7 @@ export default function WhyUs() {
                     maxWidth: "220px",
                     textShadow: "0 2px 10px rgba(0,0,0,0.3)",
                   }}>
-                    "Excellence is not a destination — it's a daily pursuit."
+                    "The Future Depends on it."
                   </p>
                   <p style={{
                     fontFamily: "var(--font-ui)",
