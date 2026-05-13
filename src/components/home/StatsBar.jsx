@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { GraduationCap, Users, BookOpen, Trophy } from "lucide-react";
 
 const stats = [
-  { icon: BookOpen, value: 2005, label: "Year Established", prefix: "Est.", suffix: "", noCount: true },
+  { icon: BookOpen, value: 2022, label: "Year Established", prefix: "Est.", suffix: "", noCount: true },
   { icon: Users, value: 400, label: "Students Enrolled", prefix: "", suffix: "+", noCount: false },
   { icon: GraduationCap, value: 20, label: "Qualified Teachers", prefix: "", suffix: "+", noCount: false },
   { icon: Trophy, value: 94, label: "MSCE Pass Rate", prefix: "", suffix: "%", noCount: false },

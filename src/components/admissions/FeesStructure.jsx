@@ -20,22 +20,22 @@ const fees = [
   {
     category: "Registration & Application",
     items: [
-      { label: "Application Fee (non-refundable)", amount: "MWK 20,000", note: "Payable upon arrival at campus" },
+      { label: "Registration fee (non-refundable)", amount: "MWK 5,000", note: "Payable upon arrival at campus" },
       
     ],
   },
   {
     category: "Tuition Fees (Per Term)",
     items: [
-      { label: "Form 1 & Form 2 (JCE)", amount: "MWK 120,000", note: "Per term" },
-      { label: "Form 3 & Form 4 (MSCE)", amount: "MWK 135,000", note: "Per term" },
+      { label: "Form 1 to Form 3 ", amount: "MWK 150,000", note: "Per term" },
+      { label: "Form 4 (MSCE)", amount: "MWK 170,000", note: "Per term" },
     ],
   },
   {
     category: "Additional Levies",
     items: [
       
-      { label: "Examination Levy (MANEB)", amount: "MWK 25,000", note: "JCE & MSCE exam years only" },
+     
       { label: "School Uniform", amount: "MWK 100,000", note: "Per arrival" },
     
     ],
