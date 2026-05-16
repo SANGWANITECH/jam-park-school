@@ -137,7 +137,7 @@ export default function About() {
                   margin: 0,
                   lineHeight: 1,
                 }}>
-                  20<span style={{ color: "#0EA5E9" }}>+</span>
+                  4<span style={{ color: "#0EA5E9" }}>+</span>
                 </p>
                 <p style={{
                   fontFamily: "var(--font-ui)",
